@@ -1,0 +1,238 @@
+:root{
+    --color-dark: #000;
+    --color-white: rgb(255, 255, 255);
+    --color-border: rgb(219, 219, 219);
+    --color-bg-white: rgb(250, 250, 250);
+    --color-grey: rgb(115,115,155);
+    --color-blue: rgb(0, 149, 246);
+    --color-blue-hover: rgba(0, 149, 246,.8);
+    --color-fb: #385185;
+    --color-link:  rgb(0, 55, 107);
+    --color-link-2:  rgb(0, 149, 246);
+}
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-white)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 50vw;
+    max-width: 350px;
+    padding: 20px 20px 30px;
+}
+
+.login-section {
+    border: solid 1px var(--color-border);
+    border-radius: 1px;
+    padding: 30px 20px;
+}
+
+.login-section h1 {
+    margin-bottom: 45px;
+}
+
+.login-section h1 {
+    text-align: center;
+}
+
+.login-section h1 > img {
+    width: fit-content;
+}
+
+
+.login-box > .login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    background-color: var(--color-bg-white);
+    border: solid 1px var(--color-border);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 9px 0 7px 8px;
+    font-size: 14px;
+    width: 100%;
+    flex: 1 0 auto;
+    font-size: 12px;
+}
+
+.login-form input:focus{
+    border: solid 1px var(--color-dark);
+}
+
+.login-form > button {
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-white);
+    padding: 8px 16px;
+    opacity: .8;
+}
+
+.login-form button:hover {
+    background-color: var(--color-blue-hover);
+}
+.separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.separator span {
+    background: var(--color-border);
+    height: 1px;
+    width: 100%;
+    margin: 10px;
+}
+
+.or {
+    color: var(--color-grey);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.login-with-fb {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.login-with-fb > svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    fill: var(--color-fb);
+}
+
+.login-with-fb a {
+    color: var(--color-fb);
+}
+
+.forgotten-pass {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.forgotten-pass a {
+    color: var(--color-link);
+}
+
+.register-section {
+    border: solid 1px var(--color-border);
+    padding: 20px 30px;
+    margin-top: 10px;
+}
+
+.register > p {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.register p a {
+    color: var(--color-link-2);
+}
+
+.get-app-section {
+    margin: 10px 0;
+}
+
+.get-app-section p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+.get-app-items{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-store-link > img {
+    width: 136px;
+    height: 40px;
+}
+
+.google-play-link > img {
+    width: 136px;
+    height: 40px;
+}
+
+.login-footer{
+    margin-top: 60px;
+}
+.footer-list-items {
+    width: 70vw;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-list-items li {
+    list-style: none;
+    flex-shrink: 1;
+    padding: 0 10px;
+}
+
+.footer-list-items li:hover{
+    text-decoration: underline;
+}
+
+.footer-list-items li > a {
+    color: var(--color-grey);
+    line-height: 16px;
+    font-size: 12px;
+}
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-grey);
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px){
+    .phone-insta {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 450px;
+    }
+}
